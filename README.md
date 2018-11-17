@@ -32,6 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ##Selectors 
 There are 3 kind of selectors : 
+<<<<<<< HEAD
 - By Element :  it must be declared as `selector: 'app-root'` in TS file and use `<app-root></app-root>` in the HTML   => see the app component 
 - By attribute : it must declared as `selector: '[app-root]'` in TS file and use `<div app-root></div>` in the HTML    => see the servers compoenent
 - By class : it must declared as `selector: '.app-root'` in TS file and use `<div class="app-root"></div>` in the HTML => see the server component
@@ -41,3 +42,8 @@ There are 3 kind of selectors :
 Example of String interpolation  = `<p> The Server with ID  {{ serverId }} is {{ getServerStatus() }} </p>`
 Example of Property Binding 
 
+=======
+- By Element :  it must be declared as `selector: 'app-root'` in TS file and use `<app-root></app-root>` in the HTML 
+- By attribute : it must declared as `selector: '[app-root]'` in TS file and use `<div app-root></div>` in the HTML
+- By class : it must declared as `selector: '.app-root'` in TS file and use `<div class="app-root"></div>` in the HTML => see the server component
+>>>>>>> a875845f8ce78eae3242b5667d2026ee1ab9416f

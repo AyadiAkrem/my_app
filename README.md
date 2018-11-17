@@ -26,21 +26,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-#Angular Notes
+# Angular Notes
 
 ## Basics 
 
-##Selectors 
+1. Selectors 
 There are 3 kind of selectors : 
 - By Element :  it must be declared as `selector: 'app-root'` in TS file and use `<app-root></app-root>` in the HTML   => see the app component 
 - By attribute : it must declared as `selector: '[app-root]'` in TS file and use `<div app-root></div>` in the HTML    => see the servers compoenent
 - By class : it must declared as `selector: '.app-root'` in TS file and use `<div class="app-root"></div>` in the HTML => see the server component
 
-##Data Binding 
+2. Data Binding 
 
 - Example of String interpolation: `<p> The Server with ID  {{ serverId }} is {{ getServerStatus() }} </p>`
 - Example of Property Binding : `<button class="btn btn-primary" [disabled]="allowNewServer" > Add new Server </button>`
 
-##Event Binding 
+3. Event Binding 
 
 - Example of event Binding : `<input  type="text"  class="form-control"  (input)="onUpdateServerName($event)">`

@@ -1,14 +1,16 @@
 <label> Server Name </label>
-<input 
-    type="text" 
-    class="form-control"
-    (input)="onUpdateServerName($event)">
 
-    <p> {{serverName}}</p>
+<p> Event binding Way </p>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
 
-<button class="btn btn-primary" 
-[disabled]="!allowNewServer" 
-(click)= "onCreateServer()"> Add new Server </button>
+<p> Two Way Binding using FormsModule</p>
+
+<input type="text" class="form-control" [(ngModel)]="serverName">
+
+<br />
+<p> {{serverName}}</p>
+
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()"> Add new Server </button>
 <p [innerText]="serverCreationStatus"></p>
 <div class="app-server"></div>
-<div class="app-server"></div>
+<div class="app-name-creator"></div>

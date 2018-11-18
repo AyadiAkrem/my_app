@@ -1,0 +1,14 @@
+<p>
+  Please specify the user name : 
+</p>
+
+<input type="text" class="form-control" [(ngModel)]="userName">
+
+<br />
+
+<p *ngIf="userName != '' ; else noUser"> The Name of the user is : {{userName}}</p>
+<ng-template #noUser>
+  <p>No User created</p>
+</ng-template>
+
+<button class="btn btn-primary" [disabled]="userName === ''" (click)="userName = ''"> Reset the user  </button>

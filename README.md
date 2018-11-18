@@ -44,3 +44,15 @@ There are 3 kind of selectors :
 3. Event Binding 
 
 - Example of event Binding : `<input  type="text"  class="form-control"  (input)="onUpdateServerName($event)">`
+
+
+## Two-Way-Binding 
+
+The FormsModule is required for the Two-Way-Binding, to do it we need to add this module to the NgModel in the app.module.ts file. 
+Here an example of input form 
+`<input type="text" class="form-control" [(ngModel)]="serverName">`
+
+## ngStyle : 
+
+This allows to dynamically change the style of the specified dom. Example: `<p [ngStyle]="{backgroundColor: getColor()}"> `
+You can applay CSS Class dynamically using ngClass. Example : `<p [ngClass]="{online: serverStatus =='online'}"> ` where online is a CSS class
